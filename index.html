@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplo 3</title>
+</head>
+<body>
+    <!--Div del mapa-->
+    <div id="viewDiv"></div>
+    <!--div del panel de graficos-->
+    <div id="panel">
+      <div style="padding: 15px;">
+        <!--canvas del grafico por año-->
+        <canvas id="year-chart" height="250" width="550"></canvas>
+        <!--canvas del grafico por edad-->
+        <canvas id="age-chart" height="250" width="550"></canvas>
+        <!--canvas del grafico Grafico circular 1-->
+        <canvas
+          id="disposition-chart"
+          width="550"
+          height="350"
+          style="float:left;"></canvas>
+        <!--canvas del grafico Grafico circular 1 -->
+        <canvas
+          id="gender-chart"
+          width="550"
+          height="350"
+          style="float:left;"></canvas>
+        <!--canvas del grafico Grafico circular 1 -->
+        <canvas
+          id="race-chart"
+          width="550"
+          height="350"
+          style="float:left;"
+        ></canvas>
+      </div>
+    </div>
+        <!-- Load the Chart.js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="https://js.arcgis.com/4.25/"></script>
+        <script src="script.js"></script>
+</body>
+</html>
